@@ -1,4 +1,4 @@
-package zonas.recinto;
+package proyecto.zonas.recinto;
 
 public class Recinto {
 

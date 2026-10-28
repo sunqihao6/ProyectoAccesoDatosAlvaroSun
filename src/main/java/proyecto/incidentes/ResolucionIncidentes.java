@@ -1,4 +1,4 @@
-package incidentes;
+package proyecto.incidentes;
 
 import java.util.ArrayList;
 import java.util.List;

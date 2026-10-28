@@ -1,4 +1,4 @@
-package vehiculo;
+package proyecto.vehiculo;
 
 public enum EstadoVehiculo {
     OPERATIVO,

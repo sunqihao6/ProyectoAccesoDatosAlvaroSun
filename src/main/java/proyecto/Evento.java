@@ -1,3 +1,5 @@
+package proyecto;
+
 import java.time.Instant;
 
 public class Evento {

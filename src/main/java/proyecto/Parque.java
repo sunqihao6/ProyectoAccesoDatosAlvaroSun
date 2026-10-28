@@ -1,16 +1,20 @@
-import vehiculo.Vehiculo;
-import zonas.Zona;
+package proyecto;
+
+import proyecto.vehiculo.Vehiculo;
+import proyecto.zonas.Zona;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Parque {
 
+    private String id;
     private List<Zona> zonas;
     private List<Vehiculo> vehiculos;
 
     public Parque() {
 
+        this.id="JP1";
         this.zonas = new ArrayList<>();
         this.vehiculos = new ArrayList<>();
         inicializarZonas();
@@ -46,5 +50,9 @@ public class Parque {
             }
         }
         return null;
+    }
+
+    public String getId() {
+        return id;
     }
 }

@@ -1,4 +1,4 @@
-package incidentes;
+package proyecto.incidentes;
 
 public enum TipoIncidente {
     FALLO_ELECTRICO,

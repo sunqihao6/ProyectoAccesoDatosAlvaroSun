@@ -1,4 +1,4 @@
-package zonas.sensor;
+package proyecto.zonas.sensor;
 
 public enum EstadoSensor {
     OPERATIVO,

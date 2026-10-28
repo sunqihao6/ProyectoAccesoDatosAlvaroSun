@@ -1,4 +1,4 @@
-package vehiculo;
+package proyecto.vehiculo;
 
 public class Vehiculo {
     private static int numId = 1;

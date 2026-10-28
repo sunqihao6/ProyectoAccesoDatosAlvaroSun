@@ -1,4 +1,4 @@
-package zonas;
+package proyecto.zonas;
 
 public enum EstadoZona {
     OPERATIVA,
