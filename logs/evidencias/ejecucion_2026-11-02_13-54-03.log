@@ -1,0 +1,6 @@
+2026-11-02T13:54:03,570 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T13:54:03,587 [main] INFO  proyecto.simulador.SimuladorPrueba - MODO PRUEBA INICIADO - Forzando error: AVERIA_VEHICULO
+2026-11-02T13:54:03,588 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T13:54:03,675 [main] ERROR proyecto.simulador.SimuladorPrueba - EXCEPCIÓN CRÍTICA CAPTURADA: INC-05: Vehículo Explorer 01 averiado en Mantenimiento (Z06)
+2026-11-02T13:54:03,679 [main] ERROR proyecto.simulador.SimuladorPrueba - Protocolo de emergencia activado. Cerrando simulador.
+2026-11-02T13:54:03,680 [main] INFO  proyecto.simulador.SimuladorPrueba - Simulación de prueba finalizada.

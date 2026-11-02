@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<parque id="JP1">
+    <zona estado="OPERATIVA" id="Z01" nombre="Centro de Control"/>
+    <zona estado="OPERATIVA" id="Z02" nombre="Herbívoros"/>
+    <zona estado="OPERATIVA" id="Z03" nombre="Velociraptores"/>
+    <zona estado="OPERATIVA" id="Z04" nombre="T. Rex"/>
+    <zona estado="OPERATIVA" id="Z05" nombre="Laboratorio"/>
+    <zona estado="EN_ALERTA" id="Z06" nombre="Mantenimiento"/>
+    <vehiculos>
+        <vehiculo estado="AVERIADO" id="V1" nombre="Explorer 01" temperaturaMotor="220.57541896440887" velocidad="0.0"/>
+    </vehiculos>
+</parque>

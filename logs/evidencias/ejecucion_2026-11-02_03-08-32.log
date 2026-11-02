@@ -1,0 +1,6 @@
+2026-11-02T03:08:32,219 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T03:08:32,235 [main] INFO  proyecto.simulador.SimuladorPrueba - MODO PRUEBA INICIADO - Forzando error: FALLO_ELECTRICO
+2026-11-02T03:08:32,237 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T03:08:32,312 [main] ERROR proyecto.simulador.SimuladorPrueba - EXCEPCIÓN CRÍTICA CAPTURADA: INC-01: Caída de suministro eléctrico en T. Rex (Z04)
+2026-11-02T03:08:32,313 [main] ERROR proyecto.simulador.SimuladorPrueba - Protocolo de emergencia activado. Cerrando simulador.
+2026-11-02T03:08:32,316 [main] INFO  proyecto.simulador.SimuladorPrueba - Simulación de prueba finalizada.

@@ -1,0 +1,36 @@
+2026-11-02T13:15:27,031 [main] INFO  proyecto.simulador.SimuladorMain - Sistema de control de Jurassic Park iniciado.
+2026-11-02T13:15:27,054 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 1: inspección de T. Rex (Z04)
+2026-11-02T13:15:27,056 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 227.4479990473734
+2026-11-02T13:15:27,559 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 2: inspección de Laboratorio (Z05)
+2026-11-02T13:15:28,060 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 3: inspección de Laboratorio (Z05)
+2026-11-02T13:15:28,566 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 4: inspección de Mantenimiento (Z06)
+2026-11-02T13:15:28,567 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 82.93809554943482
+2026-11-02T13:15:29,071 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 5: inspección de T. Rex (Z04)
+2026-11-02T13:15:29,083 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 222.4779844805298
+2026-11-02T13:15:29,586 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 6: inspección de Laboratorio (Z05)
+2026-11-02T13:15:30,089 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 7: inspección de Velociraptores (Z03)
+2026-11-02T13:15:30,591 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 8: inspección de Mantenimiento (Z06)
+2026-11-02T13:15:30,594 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 103.76996354681351
+2026-11-02T13:15:31,097 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 9: inspección de Centro de Control (Z01)
+2026-11-02T13:15:31,098 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 0.6141066783306948
+2026-11-02T13:15:31,600 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 10: inspección de Laboratorio (Z05)
+2026-11-02T13:15:32,102 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 11: inspección de Laboratorio (Z05)
+2026-11-02T13:15:32,605 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 12: inspección de Laboratorio (Z05)
+2026-11-02T13:15:33,108 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 13: inspección de Herbívoros (Z02)
+2026-11-02T13:15:33,611 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 14: inspección de Herbívoros (Z02)
+2026-11-02T13:15:34,114 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 15: inspección de Centro de Control (Z01)
+2026-11-02T13:15:34,115 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 28.278320568304764
+2026-11-02T13:15:34,617 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 16: inspección de Laboratorio (Z05)
+2026-11-02T13:15:35,122 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 17: inspección de Mantenimiento (Z06)
+2026-11-02T13:15:35,126 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 104.9617852625785
+2026-11-02T13:15:35,628 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 18: inspección de Centro de Control (Z01)
+2026-11-02T13:15:35,629 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 40.934634435640355
+2026-11-02T13:15:36,132 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 19: inspección de Laboratorio (Z05)
+2026-11-02T13:15:36,635 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 20: inspección de T. Rex (Z04)
+2026-11-02T13:15:36,638 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 222.43037890587829
+2026-11-02T13:15:37,141 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 21: inspección de Velociraptores (Z03)
+2026-11-02T13:15:37,647 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 22: inspección de Mantenimiento (Z06)
+2026-11-02T13:15:37,648 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 135.856474103632
+2026-11-02T13:15:37,649 [main] WARN  proyecto.simulador.SimuladorMain - Lectura anómala detectada por S06: AVERIA_VEHICULO
+2026-11-02T13:15:37,699 [main] ERROR proyecto.simulador.SimuladorMain - Protocolo de emergencia activado: INC-05: Vehículo Explorer 01 averiado en Mantenimiento (Z06)
+2026-11-02T13:15:37,701 [main] INFO  proyecto.simulador.SimuladorMain - Simulación finalizada.

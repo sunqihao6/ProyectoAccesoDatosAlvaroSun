@@ -1,0 +1,8 @@
+2026-11-02T12:09:06,003 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T12:09:06,783 [main] INFO  proyecto.simulador.SimuladorPrueba - MODO PRUEBA INICIADO - Forzando error: ACCESO_NO_AUTORIZADO
+2026-11-02T12:09:11,899 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T12:12:04,878 [main] FATAL proyecto.simulador.SimuladorPrueba - Error inesperado en la simulación
+java.io.IOException: La medida recibida no corresponde al tipo de incidente ACCESO_NO_AUTORIZADO.
+	at proyecto.incidentes.GestorIncidentes.provocarIncidente(GestorIncidentes.java:30) ~[classes/:?]
+	at proyecto.simulador.SimuladorPrueba.main(SimuladorPrueba.java:45) [classes/:?]
+2026-11-02T12:12:05,005 [main] INFO  proyecto.simulador.SimuladorPrueba - Simulación de prueba finalizada.

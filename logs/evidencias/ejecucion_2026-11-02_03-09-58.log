@@ -1,0 +1,6 @@
+2026-11-02T03:09:58,900 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T03:09:58,918 [main] INFO  proyecto.simulador.SimuladorPrueba - MODO PRUEBA INICIADO - Forzando error: FUGA
+2026-11-02T03:09:58,919 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T03:09:59,002 [main] ERROR proyecto.simulador.SimuladorPrueba - EXCEPCIÓN CRÍTICA CAPTURADA: INC-03: Fuga en la zona de Herbívoros (Z02)
+2026-11-02T03:09:59,003 [main] ERROR proyecto.simulador.SimuladorPrueba - Protocolo de emergencia activado. Cerrando simulador.
+2026-11-02T03:09:59,006 [main] INFO  proyecto.simulador.SimuladorPrueba - Simulación de prueba finalizada.
