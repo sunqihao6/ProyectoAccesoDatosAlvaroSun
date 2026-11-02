@@ -1,0 +1,36 @@
+2026-11-02T19:47:24,263 [main] INFO  proyecto.simulador.SimuladorMain - Sistema de control de Jurassic Park iniciado.
+2026-11-02T19:47:24,285 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 1: inspección de Centro de Control
+2026-11-02T19:47:24,287 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 21.55586213931712
+2026-11-02T19:47:24,789 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 2: inspección de T. Rex
+2026-11-02T19:47:24,790 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 225.5543989758102
+2026-11-02T19:47:25,293 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 3: inspección de Mantenimiento
+2026-11-02T19:47:25,294 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 89.15258816987077
+2026-11-02T19:47:25,797 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 4: inspección de Mantenimiento
+2026-11-02T19:47:25,798 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 101.80016881770436
+2026-11-02T19:47:26,299 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 5: inspección de Centro de Control
+2026-11-02T19:47:26,300 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 3.9363458857660447
+2026-11-02T19:47:26,802 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 6: inspección de Herbívoros
+2026-11-02T19:47:27,304 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 7: inspección de Mantenimiento
+2026-11-02T19:47:27,305 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 97.4308541388734
+2026-11-02T19:47:27,807 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 8: inspección de T. Rex
+2026-11-02T19:47:27,810 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 224.84712962120324
+2026-11-02T19:47:28,311 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 9: inspección de Laboratorio
+2026-11-02T19:47:28,814 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 10: inspección de T. Rex
+2026-11-02T19:47:28,817 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 215.16955968458004
+2026-11-02T19:47:29,320 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 11: inspección de Velociraptores
+2026-11-02T19:47:29,823 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 12: inspección de Laboratorio
+2026-11-02T19:47:30,326 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 13: inspección de Centro de Control
+2026-11-02T19:47:30,327 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 74.56697379612585
+2026-11-02T19:47:30,831 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 14: inspección de Mantenimiento
+2026-11-02T19:47:30,834 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 100.33534199332357
+2026-11-02T19:47:31,336 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 15: inspección de Laboratorio
+2026-11-02T19:47:31,841 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 16: inspección de T. Rex
+2026-11-02T19:47:31,843 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 227.8599900045603
+2026-11-02T19:47:32,346 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 17: inspección de Centro de Control
+2026-11-02T19:47:32,348 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 34.510265602237006
+2026-11-02T19:47:32,851 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 18: inspección de Herbívoros
+2026-11-02T19:47:33,354 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 19: inspección de T. Rex
+2026-11-02T19:47:33,356 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 220.57541896440887
+2026-11-02T19:47:33,356 [main] WARN  proyecto.simulador.SimuladorMain - Lectura anómala detectada por S04: AVERIA_VEHICULO
+2026-11-02T19:47:33,381 [main] ERROR proyecto.simulador.SimuladorMain - Protocolo de emergencia activado: INC-06: Vehículo Explorer 01 averiado en Mantenimiento (Z06)
+2026-11-02T19:47:33,383 [main] INFO  proyecto.simulador.SimuladorMain - Simulación finalizada.

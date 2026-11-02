@@ -1,0 +1,6 @@
+2026-11-02T12:30:07,891 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T12:30:08,458 [main] INFO  proyecto.simulador.SimuladorPrueba - MODO PRUEBA INICIADO - Forzando error: ACCESO_NO_AUTORIZADO
+2026-11-02T12:30:09,228 [main] INFO  proyecto.simulador.SimuladorPrueba - ==========================================================
+2026-11-02T12:52:49,830 [main] ERROR proyecto.simulador.SimuladorPrueba - EXCEPCIÓN CRÍTICA CAPTURADA: INC-06: Acceso no autorizado al Laboratorio (Z05)
+2026-11-02T12:52:49,837 [main] ERROR proyecto.simulador.SimuladorPrueba - Protocolo de emergencia activado. Cerrando simulador.
+2026-11-02T12:52:49,840 [main] INFO  proyecto.simulador.SimuladorPrueba - Simulación de prueba finalizada.
