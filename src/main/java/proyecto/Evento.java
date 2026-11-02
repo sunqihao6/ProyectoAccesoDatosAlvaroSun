@@ -1,51 +1,42 @@
 package proyecto;
 
-import java.time.Instant;
+import proyecto.incidentes.TipoIncidente;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+//Evento se guarda en el fichero txt
 public class Evento {
-    private static int numId = 1;
-    private String idEvento;
-    private Instant marcaTemporal;
-    private String idZona;
-    private String entidad;
-    private String accion;
+    private static final DateTimeFormatter FORMATO_MARCA_TEMPORAL =
+            DateTimeFormatter.ofPattern("dd-MM-yyyy--HH:mm:ss");
 
-    public Evento(String idZona, String entidad, String accion) {
-        this.idEvento = "EVT-" + numId;
-        this.marcaTemporal = Instant.now();
-        this.idZona = idZona;
-        this.entidad = entidad;
-        this.accion = accion;
-        setNumId();
+    private final long numeroId;
+    private final LocalDateTime marcaTemporal;
+    private final TipoIncidente incidente;
+
+    public Evento(TipoIncidente incidente) {
+        this.numeroId = 1;
+        this.marcaTemporal = LocalDateTime.now();
+        this.incidente = incidente;
     }
 
-    private void setNumId() {
-        numId += 1;
+    public long getNumeroId() {
+
+        return numeroId;
     }
 
     public String getIdEvento() {
-        return idEvento;
+
+        return "EVT-" + numeroId;
     }
 
-    public Instant getMarcaTemporal() {
-        return marcaTemporal;
+    public TipoIncidente getIncidente() {
+
+        return incidente;
     }
 
-    public String getIdZona() {
-        return idZona;
-    }
-
-    public String getEntidad() {
-        return entidad;
-    }
-
-    public String getAccion() {
-        return accion;
-    }
-
-    // Formatea el evento para escribirlo en el TXT de operaciones
+    //guarda idEvento, marcaTemporal y tipoIncidente
     public String formatearParaTxt() {
-        return marcaTemporal.toString() + "\n" +
-                idEvento + " " + idZona + " " + entidad + " " + accion;
+        return getIdEvento() + " | " + marcaTemporal.format(FORMATO_MARCA_TEMPORAL) + " | " + incidente.name();
     }
 }

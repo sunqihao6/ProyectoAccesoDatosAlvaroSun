@@ -18,18 +18,22 @@ public class Vehiculo {
     }
 
     private void setNumId() {
+
         numId += 1;
     }
 
     public String getId() {
+
         return id;
     }
 
     public String getNombre() {
+
         return nombre;
     }
 
     public EstadoVehiculo getEstado() {
+
         return estado;
     }
 
@@ -39,10 +43,6 @@ public class Vehiculo {
 
     public double getVelocidad() {
         return velocidad;
-    }
-
-    public void setVelocidad(double velocidad) {
-        this.velocidad = velocidad;
     }
 
     public double getTemperaturaMotor() {

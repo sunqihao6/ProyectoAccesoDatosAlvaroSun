@@ -1,31 +1,20 @@
 package proyecto.zonas;
 
-import proyecto.zonas.recinto.Recinto;
-
-import java.util.ArrayList;
-import java.util.List;
+import proyecto.zonas.sensor.Sensor;
+import proyecto.zonas.sensor.TipoMedicionSensor;
 
 public class Zona {
-    static int numId = 1;
-    private String id;
-    private String nombre;
+    private final String id;
+    private final String nombre;
+    private final Sensor sensor;
     private EstadoZona estado;
-    private List<Recinto> recintos;
 
-    public Zona(String nombre) {
+    public Zona(String id, String nombre, String idSensor,
+                TipoMedicionSensor tipoMedicion) {
+        this.id = id;
         this.nombre = nombre;
         this.estado = EstadoZona.OPERATIVA;
-        this.id = "Z" + String.format("%02d", numId);
-        this.recintos = new ArrayList<>();
-        setNumId();
-    }
-
-    public List<Recinto> getRecintos() {
-        return recintos;
-    }
-
-    public void agregarRecinto(Recinto recinto) {
-        this.recintos.add(recinto);
+        this.sensor = new Sensor(idSensor, "Sensor de " + nombre, id, tipoMedicion);
     }
 
     public EstadoZona getEstado() {
@@ -44,12 +33,7 @@ public class Zona {
         return id;
     }
 
-    public static void setNumId(int numId) {
-        Zona.numId = numId;
+    public Sensor getSensor() {
+        return sensor;
     }
-
-    private void setNumId() {
-        numId += 1;
-    }
-
 }

@@ -1,0 +1,12 @@
+Estado del diagnóstico: CONFIRMADO
+Evento: EVT-1
+Incidente (TXT): AVERIA_VEHICULO
+Fecha del incidente: 02-11-2026--14:41:50
+Zona afectada (XML): Z06 - Mantenimiento
+Estado de la zona (XML): EN_ALERTA
+Sistema comprometido (según incidente TXT): Flota de vehículos
+Sensor asociado (BIN): S06
+Medida principal del sensor (BIN): 125.0
+Resolución recomendada:
+ - INMOVILIZAR_VEHICULO
+ - ENVIAR_ASISTENCIA_TECNICA

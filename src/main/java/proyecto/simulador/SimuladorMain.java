@@ -1,81 +1,126 @@
 package proyecto.simulador;
 
-import proyecto.Evento;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import proyecto.Parque;
 import proyecto.incidentes.EventoCriticoException;
+import proyecto.incidentes.GestorIncidentes;
 import proyecto.incidentes.TipoIncidente;
 import proyecto.persistencia.RepositorioBinario;
 import proyecto.persistencia.RepositorioTXT;
 import proyecto.persistencia.RepositorioXML;
-import proyecto.zonas.EstadoZona;
 import proyecto.zonas.Zona;
-import proyecto.zonas.recinto.EstadoRecinto;
-import proyecto.zonas.recinto.Recinto;
+import proyecto.zonas.sensor.Sensor;
+import proyecto.zonas.sensor.TipoMedicionSensor;
 
-import java.time.Instant;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Random;
 
 public class SimuladorMain {
+    private static final Logger logger = LogManager.getLogger(SimuladorMain.class);
+
     public static void main(String[] args) {
+        Random random = new Random();
+        limpiarDatosAnteriores();
+
         Parque parque = new Parque();
-
-        // Agregar un recinto inicial a la zona Z03 (Velociraptores)
-        Zona z03 = parque.buscarZonaPorId("Z03");
-        Recinto recintoVelo = new Recinto("Recinto Velociraptores");
-        if (z03 != null) {
-            z03.agregarRecinto(recintoVelo);
-        }
-
         RepositorioTXT repoTXT = new RepositorioTXT("datos/operaciones.txt");
         RepositorioBinario repoBIN = new RepositorioBinario("datos/sensores.bin");
         RepositorioXML repoXML = new RepositorioXML("datos/parque.xml");
+        GestorIncidentes gestor = new GestorIncidentes(repoTXT, repoBIN, repoXML);
 
-        TipoIncidente incidenteAProvocar = TipoIncidente.PUERTA_ATASCADA;
+        try {
+            repoXML.guardarEstadoParque(parque);
+            logger.info("Sistema de control de Jurassic Park iniciado.");
 
-        // Lectura de argumentos de línea de comandos (modo prueba)
-        if (args.length >= 2 && args[0].equalsIgnoreCase("-incidente")) {
-            try {
-                incidenteAProvocar = TipoIncidente.valueOf(args[1].toUpperCase());
-            } catch (IllegalArgumentException e) {
-                System.out.println("Tipo de incidente no reconocido. Usando PUERTA_ATASCADA por defecto.");
+            List<Zona> zonas = parque.getZonas();
+
+            for (int ciclo = 1; ciclo <= 200; ciclo++) {
+
+                Zona zona = zonas.get(random.nextInt(zonas.size()));
+                Sensor sensor = zona.getSensor();
+                double medida = sensor.medir(random);
+                TipoIncidente incidente = detectarIncidente(zona, sensor.getTipoMedicion(), medida, random);
+
+                logger.info("Ciclo {}: inspección de {}", ciclo, zona.getNombre());
+
+                if (Double.isFinite(medida)) {
+                    logger.info("Lectura independiente de {}: {}", sensor.getId(), medida);
+                }
+
+                if (incidente != null) {
+                    logger.warn("Lectura anómala detectada por {}: {}", sensor.getId(), incidente);
+                    gestor.provocarIncidente(incidente, parque, medida);
+                }
+                Thread.sleep(500);
+            }
+            logger.info("Fin del turno: no se detectó ningún incidente.");
+        } catch (EventoCriticoException e) {
+            logger.error("Protocolo de emergencia activado: {}", e.getMessage());
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            logger.error("El simulador fue interrumpido.");
+        } catch (Exception e) {
+            logger.fatal("Error inesperado en la simulación", e);
+        } finally {
+            logger.info("Simulación finalizada.");
+        }
+    }
+
+    private static TipoIncidente detectarIncidente(Zona zona, TipoMedicionSensor tipoMedicion,
+                                                   double medida, Random random) {
+
+        if (random.nextInt(100) >= 3) {
+            return null;
+        }
+
+        switch (tipoMedicion) {
+            case TENSION: {
+                if (medida <= 100.0) {
+                    return TipoIncidente.FALLO_ELECTRICO;
+                }
+            }
+            case TEMPERATURA_MOTOR: {
+                if (medida >= 120.0) {
+                    return TipoIncidente.AVERIA_VEHICULO;
+                }
+            }
+            case RACHA_VIENTO: {
+                if (medida > 100.0) {
+                    return TipoIncidente.TORMENTA;
+                }
+            }
+            case DIGITAL: {
+
             }
         }
 
-        try {
-            System.out.println("Ejecutando simulador en modo de prueba para: " + incidenteAProvocar);
-
-            if (incidenteAProvocar == TipoIncidente.PUERTA_ATASCADA) {
-                // 1. Evidencia TXT
-                Evento evt1 = new Evento("Z03", "P03", "ORDEN_CIERRE");
-                Evento evt2 = new Evento("Z03", "P03", "CIERRE_NO_CONFIRMADO");
-                repoTXT.registrarEvento(evt1);
-                repoTXT.registrarEvento(evt2);
-
-                // 2. Evidencia BIN (Registro de 44 bytes con la puerta abierta/bloqueada)
-                repoBIN.altaRegistro(
-                        Instant.now().toEpochMilli(),
-                        3,  // idSensor (S03)
-                        3,  // idZona (Z03)
-                        (byte) 2, // Tipo de medición
-                        (byte) 1, // Estado puerta abierta / atascada
-                        (short) 0,
-                        0.0, 0.0,
-                        43L // idEvento
-                );
-
-                // 3. Evidencia XML
-                if (z03 != null) {
-                    z03.setEstado(EstadoZona.EN_EMERGENCIA);
-                    recintoVelo.setEstado(EstadoRecinto.CON_BRECHA_DE_SEGURIDAD);
-                }
-                repoXML.guardarEstadoParque(parque);
-
-                throw new EventoCriticoException("INC-02: Puerta P03 atascada en zona Z03");
+        switch (zona.getId()) {
+            case "Z02": {
+                return TipoIncidente.FUGA;
             }
+            case "Z03": {
+                return TipoIncidente.PUERTA_ATASCADA;
+            }
+            case "Z05": {
+                return TipoIncidente.ACCESO_NO_AUTORIZADO;
+            }
+            default :{
+                return null;
+            }
+        }
+    }
 
-        } catch (EventoCriticoException e) {
-            System.err.println("ALERTA MÁXIMA: " + e.getMessage());
-        } catch (Exception e) {
-            e.printStackTrace();
+    private static void limpiarDatosAnteriores() {
+        try {
+            Files.deleteIfExists(Paths.get("datos/operaciones.txt"));
+            Files.deleteIfExists(Paths.get("datos/sensores.bin"));
+            Files.deleteIfExists(Paths.get("datos/parque.xml"));
+        } catch (IOException e) {
+            logger.warn("No se pudieron limpiar los ficheros anteriores.", e);
         }
     }
 }

@@ -1,0 +1,71 @@
+2026-10-31T13:29:34,029 [main] INFO  proyecto.simulador.SimuladorMain - ==========================================================
+2026-10-31T13:29:34,034 [main] INFO  proyecto.simulador.SimuladorMain - SISTEMA DE CONTROL DE JURASSIC PARK INICIADO
+2026-10-31T13:29:34,034 [main] INFO  proyecto.simulador.SimuladorMain - ==========================================================
+2026-10-31T13:29:34,050 [main] INFO  proyecto.simulador.SimuladorMain - Incidente programado (modo latente): TORMENTA
+2026-10-31T13:29:34,051 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 1] Desplazando equipo de revisión ---
+2026-10-31T13:29:34,054 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Mantenimiento (Z06)
+2026-10-31T13:29:34,055 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:34,067 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:34,070 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z06 registra 220,57 V.
+2026-10-31T13:29:34,070 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z06: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:35,573 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 2] Desplazando equipo de revisión ---
+2026-10-31T13:29:35,574 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Velociraptores (Z03)
+2026-10-31T13:29:35,575 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:35,579 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:35,581 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z03 registra 220,86 V.
+2026-10-31T13:29:35,581 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z03: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:37,083 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 3] Desplazando equipo de revisión ---
+2026-10-31T13:29:37,084 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Mantenimiento (Z06)
+2026-10-31T13:29:37,085 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:37,088 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:37,091 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z06 registra 220,75 V.
+2026-10-31T13:29:37,092 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z06: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:38,594 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 4] Desplazando equipo de revisión ---
+2026-10-31T13:29:38,596 [main] INFO  proyecto.simulador.SimuladorMain - Destino: T. Rex (Z04)
+2026-10-31T13:29:38,597 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:38,603 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:38,604 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z04 registra 220,33 V.
+2026-10-31T13:29:38,604 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z04: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:40,106 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 5] Desplazando equipo de revisión ---
+2026-10-31T13:29:40,108 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Velociraptores (Z03)
+2026-10-31T13:29:40,109 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:40,112 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:40,113 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z03 registra 220,78 V.
+2026-10-31T13:29:40,113 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z03: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:41,615 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 6] Desplazando equipo de revisión ---
+2026-10-31T13:29:41,617 [main] INFO  proyecto.simulador.SimuladorMain - Destino: T. Rex (Z04)
+2026-10-31T13:29:41,617 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:41,623 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:41,624 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z04 registra 220,29 V.
+2026-10-31T13:29:41,625 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z04: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:43,126 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 7] Desplazando equipo de revisión ---
+2026-10-31T13:29:43,127 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Centro de Control (Z01)
+2026-10-31T13:29:43,128 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:43,131 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:43,132 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z01 registra 220,83 V.
+2026-10-31T13:29:43,133 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z01: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:44,634 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 8] Desplazando equipo de revisión ---
+2026-10-31T13:29:44,636 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Laboratorio (Z05)
+2026-10-31T13:29:44,637 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:44,646 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:44,648 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z05 registra 220,82 V.
+2026-10-31T13:29:44,648 [main] INFO  proyecto.simulador.SimuladorMain - Estado de la zona Z05: SEGURO. Continuamos patrulla...
+
+2026-10-31T13:29:46,150 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 9] Desplazando equipo de revisión ---
+2026-10-31T13:29:46,153 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Centro de Control (Z01)
+2026-10-31T13:29:46,154 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-10-31T13:29:46,158 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-10-31T13:29:46,160 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z01 registra 220,72 V.
+2026-10-31T13:29:46,162 [main] WARN  proyecto.simulador.SimuladorMain - ==========================================================
+2026-10-31T13:29:46,163 [main] WARN  proyecto.simulador.SimuladorMain - ¡ALERTA MÁXIMA! ¡ANOMALÍA DETECTADA EN LOS SISTEMAS!
+2026-10-31T13:29:46,163 [main] WARN  proyecto.simulador.SimuladorMain - ==========================================================
+2026-10-31T13:29:46,270 [main] ERROR proyecto.simulador.SimuladorMain - EXCEPCIÓN CRÍTICA CAPTURADA: INC-04: Tormenta severa afectando sectores exteriores
+2026-10-31T13:29:46,271 [main] ERROR proyecto.simulador.SimuladorMain - Protocolo de emergencia activado. Cerrando simulador.
+2026-10-31T13:29:46,272 [main] INFO  proyecto.simulador.SimuladorMain - Simulación finalizada. Todos los ficheros de datos (TXT, BIN, XML) se han guardado.

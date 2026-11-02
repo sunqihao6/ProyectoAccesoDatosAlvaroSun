@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<parque id="JP1">
+    <zona estado="EN_ALERTA" id="Z06" nombre="Mantenimiento"/>
+    <vehiculos>
+                
+        <vehiculo estado="AVERIADO" id="V1" nombre="Explorer 01" temperaturaMotor="125.0" velocidad="0.0"/>
+            
+    </vehiculos>
+</parque>

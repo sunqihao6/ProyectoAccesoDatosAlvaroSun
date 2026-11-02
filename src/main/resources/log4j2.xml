@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <File name="EvidenciasLogAppender" fileName="logs/evidencias/ejecucion_${date:yyyy-MM-dd_HH-mm-ss}.log">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <RollingFile name="RuntimeLogAppender" fileName="logs/runtime/app.log"
+                     filePattern="logs/runtime/app-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{ISO8601} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="EvidenciasLogAppender"/>
+            <AppenderRef ref="RuntimeLogAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

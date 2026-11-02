@@ -1,0 +1,47 @@
+2026-11-02T13:16:38,409 [main] INFO  proyecto.simulador.SimuladorMain - Sistema de control de Jurassic Park iniciado.
+2026-11-02T13:16:38,433 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 1: inspección de Centro de Control (Z01)
+2026-11-02T13:16:38,435 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 53.25942866067488
+2026-11-02T13:16:38,938 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 2: inspección de Herbívoros (Z02)
+2026-11-02T13:16:39,440 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 3: inspección de Mantenimiento (Z06)
+2026-11-02T13:16:39,442 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 94.7899866857633
+2026-11-02T13:16:39,944 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 4: inspección de Mantenimiento (Z06)
+2026-11-02T13:16:39,945 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 100.88642647162449
+2026-11-02T13:16:40,446 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 5: inspección de Laboratorio (Z05)
+2026-11-02T13:16:40,949 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 6: inspección de Centro de Control (Z01)
+2026-11-02T13:16:40,955 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 32.043349726312805
+2026-11-02T13:16:41,461 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 7: inspección de Mantenimiento (Z06)
+2026-11-02T13:16:41,463 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 101.09212329284406
+2026-11-02T13:16:41,966 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 8: inspección de Laboratorio (Z05)
+2026-11-02T13:16:42,467 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 9: inspección de Mantenimiento (Z06)
+2026-11-02T13:16:42,468 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 107.30025061800808
+2026-11-02T13:16:42,970 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 10: inspección de Herbívoros (Z02)
+2026-11-02T13:16:43,472 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 11: inspección de T. Rex (Z04)
+2026-11-02T13:16:43,473 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 223.39603161097855
+2026-11-02T13:16:43,976 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 12: inspección de Herbívoros (Z02)
+2026-11-02T13:16:44,483 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 13: inspección de Velociraptores (Z03)
+2026-11-02T13:16:44,984 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 14: inspección de Centro de Control (Z01)
+2026-11-02T13:16:44,985 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 20.276725988065643
+2026-11-02T13:16:45,486 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 15: inspección de Herbívoros (Z02)
+2026-11-02T13:16:45,989 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 16: inspección de Laboratorio (Z05)
+2026-11-02T13:16:46,491 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 17: inspección de Centro de Control (Z01)
+2026-11-02T13:16:46,495 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 78.42988802108366
+2026-11-02T13:16:47,074 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 18: inspección de Velociraptores (Z03)
+2026-11-02T13:16:47,579 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 19: inspección de Centro de Control (Z01)
+2026-11-02T13:16:47,581 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 61.856742928700946
+2026-11-02T13:16:48,084 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 20: inspección de Centro de Control (Z01)
+2026-11-02T13:16:48,086 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 63.501103137669055
+2026-11-02T13:16:48,588 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 21: inspección de T. Rex (Z04)
+2026-11-02T13:16:48,594 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 229.2546543350769
+2026-11-02T13:16:49,095 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 22: inspección de Mantenimiento (Z06)
+2026-11-02T13:16:49,098 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S06: 101.4442961421092
+2026-11-02T13:16:49,599 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 23: inspección de Herbívoros (Z02)
+2026-11-02T13:16:50,101 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 24: inspección de Laboratorio (Z05)
+2026-11-02T13:16:50,603 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 25: inspección de T. Rex (Z04)
+2026-11-02T13:16:50,605 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 226.89148185918762
+2026-11-02T13:16:51,107 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 26: inspección de Centro de Control (Z01)
+2026-11-02T13:16:51,108 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S01: 21.34527408111638
+2026-11-02T13:16:51,613 [main] INFO  proyecto.simulador.SimuladorMain - Ciclo 27: inspección de T. Rex (Z04)
+2026-11-02T13:16:51,614 [main] INFO  proyecto.simulador.SimuladorMain - Lectura independiente de S04: 36.98066777008253
+2026-11-02T13:16:51,615 [main] WARN  proyecto.simulador.SimuladorMain - Lectura anómala detectada por S04: FALLO_ELECTRICO
+2026-11-02T13:16:51,637 [main] ERROR proyecto.simulador.SimuladorMain - Protocolo de emergencia activado: INC-01: Caída de suministro eléctrico en T. Rex (Z04)
+2026-11-02T13:16:51,639 [main] INFO  proyecto.simulador.SimuladorMain - Simulación finalizada.

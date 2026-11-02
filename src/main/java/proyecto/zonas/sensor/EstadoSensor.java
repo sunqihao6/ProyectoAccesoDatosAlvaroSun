@@ -1,8 +1,16 @@
 package proyecto.zonas.sensor;
 
 public enum EstadoSensor {
-    OPERATIVO,
-    AVERIADO,
-    SIN_COMUNICACION
+    OPERATIVO(0);
+
+    private final byte codigo;
+
+    EstadoSensor(int codigo) {
+        this.codigo = (byte) codigo;
+    }
+
+    public byte getCodigo() {
+        return codigo;
+    }
 
 }

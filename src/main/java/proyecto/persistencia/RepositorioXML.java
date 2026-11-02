@@ -5,7 +5,6 @@ import org.w3c.dom.Element;
 import proyecto.Parque;
 import proyecto.vehiculo.Vehiculo;
 import proyecto.zonas.Zona;
-import proyecto.zonas.recinto.Recinto;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -15,6 +14,8 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 
 public class RepositorioXML {
 
@@ -24,13 +25,13 @@ public class RepositorioXML {
         this.rutaFichero = ruta;
     }
 
-    public void guardarEstadoParque(Parque parque) {
+    public void guardarEstadoParque(Parque parque) throws IOException {
         try {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
             Document doc = docBuilder.newDocument();
 
-            // Elemento raíz <parque id="JP01">
+            // Elemento raíz parque
             Element rootElement = doc.createElement("parque");
             rootElement.setAttribute("id", parque.getId());
             doc.appendChild(rootElement);
@@ -42,49 +43,36 @@ public class RepositorioXML {
                 zonaElement.setAttribute("nombre", zona.getNombre());
                 zonaElement.setAttribute("estado", zona.getEstado().name());
 
-                if (zona.getRecintos() != null) {
-                    for (Recinto recinto : zona.getRecintos()) {
-                        Element recintoElement = doc.createElement("recinto");
-                        recintoElement.setAttribute("id", recinto.getId());
-                        recintoElement.setAttribute("nombre", recinto.getNombre());
-                        recintoElement.setAttribute("estado", recinto.getEstado().name());
-                        zonaElement.appendChild(recintoElement);
-                    }
-                }
                 rootElement.appendChild(zonaElement);
             }
 
-            // Recorrer los vehículos del parque
-            if (parque.getVehiculos() != null && !parque.getVehiculos().isEmpty()) {
+            // El parque mantiene un único vehículo, creado cuando ocurre una avería.
+            if (parque.getVehiculo() != null) {
                 Element vehiculosElement = doc.createElement("vehiculos");
-                for (Vehiculo v : parque.getVehiculos()) {
-                    Element vehiculoElement = doc.createElement("vehiculo");
-                    vehiculoElement.setAttribute("id", v.getId());
-                    vehiculoElement.setAttribute("nombre", v.getNombre());
-                    vehiculoElement.setAttribute("estado", v.getEstado().name());
-                    vehiculoElement.setAttribute("velocidad", String.valueOf(v.getVelocidad()));
-                    vehiculoElement.setAttribute("temperaturaMotor", String.valueOf(v.getTemperaturaMotor()));
-                    vehiculosElement.appendChild(vehiculoElement);
-                }
+                Vehiculo v = parque.getVehiculo();
+                Element vehiculoElement = doc.createElement("vehiculo");
+                vehiculoElement.setAttribute("id", v.getId());
+                vehiculoElement.setAttribute("nombre", v.getNombre());
+                vehiculoElement.setAttribute("estado", v.getEstado().name());
+                vehiculoElement.setAttribute("velocidad", String.valueOf(v.getVelocidad()));
+                vehiculoElement.setAttribute("temperaturaMotor", String.valueOf(v.getTemperaturaMotor()));
+                vehiculosElement.appendChild(vehiculoElement);
                 rootElement.appendChild(vehiculosElement);
             }
 
             File archivo = new File(rutaFichero);
-            if (archivo.getParentFile() != null) {
-                archivo.getParentFile().mkdirs();
-            }
+            if (archivo.getParentFile() != null) Files.createDirectories(archivo.getParentFile().toPath());
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
 
             DOMSource source = new DOMSource(doc);
             StreamResult result = new StreamResult(archivo);
             transformer.transform(source, result);
 
         } catch (Exception e) {
-            System.err.println("Error al generar el XML: " + e.getMessage());
+            throw new IOException("Error al generar el XML: " + e.getMessage(), e);
         }
     }
 }

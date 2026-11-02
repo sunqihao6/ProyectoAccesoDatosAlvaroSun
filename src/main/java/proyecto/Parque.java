@@ -1,6 +1,7 @@
 package proyecto;
 
 import proyecto.vehiculo.Vehiculo;
+import proyecto.zonas.sensor.TipoMedicionSensor;
 import proyecto.zonas.Zona;
 
 import java.util.ArrayList;
@@ -10,36 +11,39 @@ public class Parque {
 
     private String id;
     private List<Zona> zonas;
-    private List<Vehiculo> vehiculos;
+    private Vehiculo vehiculo;
 
     public Parque() {
 
         this.id="JP1";
         this.zonas = new ArrayList<>();
-        this.vehiculos = new ArrayList<>();
         inicializarZonas();
     }
-
-    // El documento indica 6 zonas estables (Z01 a Z06)
+    
     private void inicializarZonas() {
-        zonas.add(new Zona("Centro de Control")); // Z1
-        zonas.add(new Zona("Herbívoros"));        // Z2
-        zonas.add(new Zona("Velociraptores"));    // Z3
-        zonas.add(new Zona("T. Rex"));            // Z4
-        zonas.add(new Zona("Laboratorio"));       // Z5
-        zonas.add(new Zona("Mantenimiento"));     // Z6
+        zonas.add(new Zona("Z01", "Centro de Control", "S01", TipoMedicionSensor.RACHA_VIENTO));
+
+        zonas.add(new Zona("Z02", "Herbívoros", "S02", TipoMedicionSensor.DIGITAL));
+
+        zonas.add(new Zona("Z03", "Velociraptores", "S03", TipoMedicionSensor.DIGITAL));
+
+        zonas.add(new Zona("Z04", "T. Rex", "S04", TipoMedicionSensor.TENSION));
+
+        zonas.add(new Zona("Z05", "Laboratorio", "S05", TipoMedicionSensor.DIGITAL));
+
+        zonas.add(new Zona("Z06", "Mantenimiento", "S06", TipoMedicionSensor.TEMPERATURA_MOTOR));
     }
 
-    public void agregarVehiculo(Vehiculo vehiculo) {
-        this.vehiculos.add(vehiculo);
+    public void setVehiculo(Vehiculo vehiculo) {
+        this.vehiculo = vehiculo;
     }
 
     public List<Zona> getZonas() {
         return zonas;
     }
 
-    public List<Vehiculo> getVehiculos() {
-        return vehiculos;
+    public Vehiculo getVehiculo() {
+        return vehiculo;
     }
 
     // busca una zona por su ID

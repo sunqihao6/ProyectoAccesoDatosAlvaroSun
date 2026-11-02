@@ -1,0 +1,15 @@
+2026-11-01T14:10:09,684 [main] INFO  proyecto.simulador.SimuladorMain - ==========================================================
+2026-11-01T14:10:09,701 [main] INFO  proyecto.simulador.SimuladorMain - SISTEMA DE CONTROL DE JURASSIC PARK INICIADO
+2026-11-01T14:10:09,705 [main] INFO  proyecto.simulador.SimuladorMain - ==========================================================
+2026-11-01T14:10:09,781 [main] INFO  proyecto.simulador.SimuladorMain - Incidente programado (modo latente): AVERIA_VEHICULO
+2026-11-01T14:10:09,785 [main] INFO  proyecto.simulador.SimuladorMain - --- [Ciclo 1] Desplazando equipo de revisión ---
+2026-11-01T14:10:09,789 [main] INFO  proyecto.simulador.SimuladorMain - Destino: Mantenimiento (Z06)
+2026-11-01T14:10:09,790 [main] INFO  proyecto.simulador.SimuladorMain - Ejecutando diagnóstico de sistemas de contención y telemetría...
+2026-11-01T14:10:09,806 [main] INFO  proyecto.simulador.SimuladorMain - >> TXT actualizado: Inspección OK.
+2026-11-01T14:10:09,814 [main] INFO  proyecto.simulador.SimuladorMain - >> BIN actualizado: Sensor de zona Z06 registra 220,78 V.
+2026-11-01T14:10:09,815 [main] WARN  proyecto.simulador.SimuladorMain - ==========================================================
+2026-11-01T14:10:09,817 [main] WARN  proyecto.simulador.SimuladorMain - ¡ALERTA MÁXIMA! ¡ANOMALÍA DETECTADA EN LOS SISTEMAS!
+2026-11-01T14:10:09,818 [main] WARN  proyecto.simulador.SimuladorMain - ==========================================================
+2026-11-01T14:10:09,971 [main] ERROR proyecto.simulador.SimuladorMain - EXCEPCIÓN CRÍTICA CAPTURADA: INC-05: Vehículo Explorer 01 averiado con sobrecalentamiento
+2026-11-01T14:10:09,972 [main] ERROR proyecto.simulador.SimuladorMain - Protocolo de emergencia activado. Cerrando simulador.
+2026-11-01T14:10:09,974 [main] INFO  proyecto.simulador.SimuladorMain - Simulación finalizada. Todos los ficheros de datos (TXT, BIN, XML) se han guardado.
